@@ -7,11 +7,17 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "pnpm run \"/^lint:.*/\"",
+    "lint:typecheck": "nuxt typecheck"
   },
   "dependencies": {
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3",
+    "vue-tsc": "^1"
   }
 }

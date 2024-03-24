@@ -8,8 +8,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "pnpm run \"/^lint:.*/\"",
-    "lint:typecheck": "nuxt typecheck"
+    "lint": "pnpm --reporter=append-only run \"/^lint:.*/\"",
+    "lint:typecheck": "nuxt typecheck",
+    "lint:prettier": "prettier -c .",
+    "fix": "pnpm --reporter=append-only run \"/^fix:.*/\"",
+    "fix:prettier": "prettier -w ."
   },
   "dependencies": {
     "nuxt": "^3.11.1",
@@ -17,6 +20,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "prettier": "^3.2.5",
     "typescript": "^5.4.3",
     "vue-tsc": "^1"
   }

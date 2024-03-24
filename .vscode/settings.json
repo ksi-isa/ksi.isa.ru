@@ -1,0 +1,5 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // doesn't work
+  "prettier.ignorePath": "./{.gitignore,.prettierignore}"
+}

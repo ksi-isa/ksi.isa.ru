@@ -8,6 +8,10 @@
 </template>
 
 <script setup>
+  useSeoMeta({
+    title: "Главная | КСИ",
+  })
+
   const { data } = await useAsyncData("index", () =>
     queryContent("/").findOne(),
   )

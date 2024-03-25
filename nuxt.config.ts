@@ -4,5 +4,10 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true,
   },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icon"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/content",
+    "@nuxtjs/sitemap",
+    "nuxt-icon",
+  ],
 })

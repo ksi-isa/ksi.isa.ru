@@ -1,5 +1,14 @@
 <template>
   <div>
-    <h1>Преподаватели</h1>
+    <h1>Преподаватели:</h1>
+    <div>
+      <p v-for="staff in data">{{ staff.description }}</p>
+    </div>
   </div>
 </template>
+
+<script setup lang="ts">
+  const { data } = await useAsyncData("staff", () =>
+    queryContent("/staff").find(),
+  )
+</script>

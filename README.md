@@ -33,3 +33,7 @@ pnpm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## TODO:
+
+- [ ] добавить страницу 404 с ссылкой на гравную

@@ -1,9 +1,10 @@
 <template>
   <div>
-    <h1>Главная</h1>
-    <ContentRenderer :value="data">
-      <ContentRendererMarkdown :value="data" />
-    </ContentRenderer>
+    <HeroBanner text="Кафедра системных исследований" />
+
+    <div class="mx-auto max-w-7xl h-screen">
+      <h2>Главная страница</h2>
+    </div>
   </div>
 </template>
 
@@ -11,8 +12,4 @@
   useSeoMeta({
     title: "Главная | КСИ",
   })
-
-  const { data } = await useAsyncData("index", () =>
-    queryContent("/").findOne(),
-  )
 </script>

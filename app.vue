@@ -76,9 +76,7 @@
       </DisclosurePanel>
     </Disclosure>
 
-    <div class="flex-grow mx-auto max-w-7xl">
-      <NuxtPage />
-    </div>
+    <NuxtPage />
 
     <footer
       class="bg-gray-800 text-gray-200 p-4 text-center flex items-center justify-center"

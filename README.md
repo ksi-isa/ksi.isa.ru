@@ -37,3 +37,8 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## TODO:
 
 - [ ] добавить страницу 404 с ссылкой на гравную
+
+## Источники фото:
+
+- https://www.pexels.com/photo/white-textile-911738/
+-

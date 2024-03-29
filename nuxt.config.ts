@@ -15,15 +15,19 @@ export default defineNuxtConfig({
       ],
     },
   },
+  vue: {
+    propsDestructure: true,
+  },
   devtools: { enabled: true },
   typescript: {
     typeCheck: true,
     strict: true,
   },
   modules: [
-    "@nuxtjs/tailwindcss",
     "@nuxt/content",
+    "@nuxt/image",
     "@nuxtjs/sitemap",
+    "@nuxtjs/tailwindcss",
     "nuxt-icon",
   ],
 })

@@ -37,6 +37,7 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 ## TODO:
 
 - [ ] добавить страницу 404 с ссылкой на гравную
+- [ ] лого в SVG и без фона
 
 ## Источники фото:
 

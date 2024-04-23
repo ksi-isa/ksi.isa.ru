@@ -8,11 +8,19 @@ export default defineNuxtConfig({
         lang: "ru",
       },
       meta: [
+        { charset: "utf-8" },
         {
           name: "description",
           content: "Сайт Кафедры Системных Исследований",
         },
+        {
+          hid: "description",
+          name: "description",
+          content: process.env.npm_package_description || "",
+        },
       ],
+
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
   vue: {

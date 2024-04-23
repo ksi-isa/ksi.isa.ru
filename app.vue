@@ -29,17 +29,17 @@
             class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start"
           >
             <div class="flex flex-shrink-0 items-center">
-              <!-- <NuxtLink to="/" class="text-md font-bold py-1 pl-2"> -->
-              <!-- Кафедра&nbsp;Системных&nbsp;Исследований -->
-              <NuxtPicture
-                format="webp"
-                quality="100"
-                src="/logo.jpg"
-                :img-attrs="{
-                  class: 'h-16',
-                }"
-              />
-              <!-- </NuxtLink> -->
+              <NuxtLink to="/" class="text-md font-bold py-1 pl-2">
+                <!-- Кафедра&nbsp;Системных&nbsp;Исследований -->
+                <NuxtPicture
+                  format="webp"
+                  quality="100"
+                  src="/logo.jpg"
+                  :img-attrs="{
+                    class: 'h-16',
+                  }"
+                />
+              </NuxtLink>
             </div>
             <div class="hidden lg:ml-6 lg:block my-auto">
               <div class="flex space-x-4">

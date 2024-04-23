@@ -1,5 +1,6 @@
 {
   "name": "ksi.isa.ru",
+  "description": "Сайт Кафедры Системных Исследований",
   "private": true,
   "type": "module",
   "scripts": {

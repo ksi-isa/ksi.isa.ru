@@ -47,12 +47,8 @@
                   v-for="item in navigation"
                   :key="item.name"
                   :to="item.to"
-                  :class="[
-                    item.to == route.path
-                      ? 'bg-gray-200 text-black'
-                      : 'text-gray-800 hover:bg-gray-200 hover:text-black',
-                    'rounded-md px-3 py-2 text-sm font-medium',
-                  ]"
+                  activeClass="bg-gray-200 text-black"
+                  class="text-gray-800 hover:bg-gray-200 hover:text-black rounded-md px-3 py-2 text-sm font-medium"
                 >
                   <!-- :aria-current="item.current ? 'page' : undefined" -->
                   {{ item.name }}
@@ -70,12 +66,8 @@
             @click="close"
             :key="item.name"
             :to="item.to"
-            :class="[
-              item.to == route.path
-                ? 'bg-gray-200 text-black'
-                : 'text-gray-800 hover:bg-gray-200 hover:text-black',
-              'block rounded-md px-3 py-2 text-base font-medium',
-            ]"
+            activeClass="bg-gray-200 text-black"
+            class="text-gray-800 hover:bg-gray-200 hover:text-black block rounded-md px-3 py-2 text-base font-medium"
           >
             <!-- :aria-current="item.current ? 'page' : undefined" -->
             {{ item.name }}
@@ -100,8 +92,6 @@
     DisclosureButton,
     DisclosurePanel,
   } from "@headlessui/vue"
-
-  const route = useRoute()
 
   const navigation = [
     { name: "Главная", to: "/" },

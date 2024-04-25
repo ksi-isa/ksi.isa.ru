@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen">
+  <div class="flex flex-col h-screen justify-between">
     <Disclosure as="nav" class="bg-gray-100" v-slot="{ open }">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
@@ -76,7 +76,9 @@
       </DisclosurePanel>
     </Disclosure>
 
-    <NuxtPage />
+    <main class="mb-auto">
+      <NuxtPage />
+    </main>
 
     <footer
       class="bg-gray-800 text-gray-200 p-4 text-center flex items-center justify-center"

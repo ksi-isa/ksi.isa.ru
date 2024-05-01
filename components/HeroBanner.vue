@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
   const { src = "/hero.jpg", text } = defineProps<{
-    src: string | undefined
+    src?: string
     text: string
   }>()
 </script>

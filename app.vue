@@ -99,6 +99,7 @@
     { name: "Главная", to: "/" },
     { name: "О\xA0кафедре", to: "/about" },
     { name: "Читаемые\xA0курсы", to: "/courses" },
+    { name: "Тематика\xA0дипломных\xA0работ", to: "/topics" },
     { name: "Преподаватели", to: "/staff" },
     { name: "Абитуриентам", to: "/applicants" },
     { name: "Контакты", to: "/contacts" },

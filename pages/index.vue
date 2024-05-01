@@ -2,8 +2,8 @@
   <div>
     <HeroBanner text="Кафедра системных исследований" />
 
-    <div class="mx-auto max-w-7xl px-5 xl:px-0">
-      <p class="pt-5 lg:pt-10">
+    <div class="mx-auto max-w-7xl px-5 xl:px-0 my-5 lg:my-10">
+      <p>
         Кафедра системных исследований является
         <NuxtLink
           target="_blank"
@@ -25,7 +25,7 @@
         >.
       </p>
       <p>
-        Презентация кафедры системных исследований:
+        Презентация Кафедры Системных Исследований:
         <NuxtLink
           target="_blank"
           class="underline text-blue-600 hover:text-blue-700 visited:text-violet-600"

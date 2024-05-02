@@ -27,10 +27,13 @@ export default defineNuxtConfig({
     propsDestructure: true,
   },
   devtools: { enabled: true },
-  typescript: {
-    typeCheck: true,
-    strict: true,
-  },
+  typescript:
+    process.env.NODE_ENV == "production"
+      ? {}
+      : {
+          typeCheck: true,
+          strict: true,
+        },
   modules: [
     "@nuxt/content",
     "@nuxt/image",
@@ -38,4 +41,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "nuxt-icon",
   ],
+  site: {
+    url: "https://ksi.isa.ru",
+  },
 })

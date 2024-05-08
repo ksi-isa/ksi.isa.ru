@@ -24,7 +24,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@nuxtjs/sitemap": "^5.1.2",
+    "@nuxtjs/sitemap": "^5.1.5",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "nuxt-icon": "^0.6.10",
     "prettier": "^3.2.5",

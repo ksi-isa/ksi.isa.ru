@@ -28,7 +28,7 @@
     "@nuxtjs/tailwindcss": "^6.11.4",
     "nuxt-icon": "^0.6.10",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3",
+    "typescript": "^5.4.5",
     "vue-tsc": "^1"
   }
 }

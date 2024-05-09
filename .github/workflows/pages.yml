@@ -64,4 +64,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         env:
-          NUXT_APP_BASE_URL: ${{ vars.url }}
+          NUXT_APP_BASE_URL: $url
+      - run: echo $url > $GITHUB_OUTPUT

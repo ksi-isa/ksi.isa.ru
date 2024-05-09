@@ -28,7 +28,7 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   typescript:
-    process.env.NODE_ENV != "production"
+    process.env.NODE_ENV == "development"
       ? {
           typeCheck: true,
           strict: true,

@@ -5,7 +5,7 @@ on:
     branches: main
 
 jobs:
-  login:
+  build_and_push_to_ghcr:
     runs-on: ubuntu-latest
 
     permissions:

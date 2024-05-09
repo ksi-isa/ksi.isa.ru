@@ -46,6 +46,8 @@ jobs:
         run: pnpm install
       - name: Static HTML export with Nuxt
         run: pnpm nuxt build --preset github_pages
+        env:
+          NUXT_APP_BASE_URL: "/${{ github.event.repository.name }}/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -63,6 +65,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        env:
-          NUXT_APP_BASE_URL: $url
-      - run: echo $url > $GITHUB_OUTPUT

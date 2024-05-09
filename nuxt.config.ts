@@ -28,12 +28,12 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   typescript:
-    process.env.NODE_ENV == "production"
-      ? {}
-      : {
+    process.env.NODE_ENV != "production"
+      ? {
           typeCheck: true,
           strict: true,
-        },
+        }
+      : {},
   modules: [
     "@nuxt/content",
     "@nuxt/image",

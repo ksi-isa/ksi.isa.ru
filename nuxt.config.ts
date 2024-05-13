@@ -18,6 +18,22 @@ export default defineNuxtConfig({
           name: "description",
           content: process.env.npm_package_description || "",
         },
+        {
+          property: "og:title",
+          content: "Сайт Кафедры Системных Исследований",
+        },
+        {
+          property: "og:type",
+          content: "website",
+        },
+        {
+          property: "og:url",
+          content: "ksi.isa.ru",
+        },
+        {
+          property: "og:image",
+          content: "/logo.png",
+        },
       ],
 
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

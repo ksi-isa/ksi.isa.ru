@@ -34,4 +34,14 @@ jobs:
           docker --context paper rm ksi.isa.ru
 
       - name: Run latest in paper
-        run: docker --context paper run --name ksi.isa.ru -p 18080:3000 ghcr.io/ksi-isa/ksi.isa.ru:latest
+        run: |
+          docker --context paper run -d \
+          --name ksi.isa.ru \
+          --restart always \
+          -p 18080:3000 \
+          --label traefik.enable=true \
+          --label "traefik.http.routers.ksi.rule=Host(\`ksi.papertext.ru\`) || Host(\`ksi.isa.ru\`)" \
+          --label "traefik.http.routers.ksi.entrypoints=websecure" \
+          --label "traefik.http.routers.ksi.tls=true" \
+          --label "traefik.http.routers.ksi.tls.certresolver=rslv" \
+          ghcr.io/ksi-isa/ksi.isa.ru:latest

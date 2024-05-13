@@ -2,7 +2,7 @@
   <div class="flex flex-col h-screen justify-between">
     <Disclosure as="nav" class="bg-gray-100" v-slot="{ open }">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
+        <div class="relative flex items-center justify-between">
           <!-- Mobile menu button-->
           <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
             <DisclosureButton
@@ -29,16 +29,25 @@
             class="flex flex-1 items-center justify-center lg:items-stretch lg:justify-start"
           >
             <div class="flex flex-shrink-0 items-center">
-              <NuxtLink to="/" class="text-md font-bold py-1 pl-2">
+              <NuxtLink
+                to="/"
+                class="flex items-center gap-3 text-md font-bold py-1 pl-2"
+              >
                 <!-- Кафедра&nbsp;Системных&nbsp;Исследований -->
                 <NuxtPicture
                   format="webp"
                   quality="100"
-                  src="/logo.jpg"
+                  src="/logo.png"
                   :img-attrs="{
                     class: 'h-16',
+                    alt: 'Кафедра Системных Исследований',
                   }"
                 />
+                <div class="flex flex-col items-start gap-0">
+                  <span>Кафедра</span>
+                  <span>Системных</span>
+                  <span>Исследований</span>
+                </div>
               </NuxtLink>
             </div>
             <div class="hidden lg:ml-6 lg:block my-auto">
@@ -93,7 +102,10 @@
     Disclosure,
     DisclosureButton,
     DisclosurePanel,
+    provideUseId,
   } from "@headlessui/vue"
+
+  provideUseId(() => useId())
 
   const navigation = [
     { name: "Главная", to: "/" },

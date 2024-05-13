@@ -23,7 +23,7 @@
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
     "typescript": "^5.4.3",
-    "vue-tsc": "^1",
+    "vue-tsc": "^2",
     "@nuxtjs/sitemap": "^5.1.2",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "nuxt-icon": "^0.6.10"

@@ -28,7 +28,10 @@ jobs:
         run: docker --context paper pull ghcr.io/ksi-isa/ksi.isa.ru:latest
 
       - name: Remove previous in paper
-        run: docker --context paper rm ksi.isa.ru
+        continue-on-error: true
+        run: |
+          docker --context paper stop ksi.isa.ru
+          docker --context paper rm ksi.isa.ru
 
       - name: Run latest in paper
         run: docker --context paper run --name ksi.isa.ru -p 18080:3000 ghcr.io/ksi-isa/ksi.isa.ru:latest

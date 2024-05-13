@@ -1,0 +1,27 @@
+name: deploy to paper
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create ssh key
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.paper_host }} > ~/.ssh/known_hosts
+
+      - name: Create context
+        run: docker context create paper --docker "host=ssh://${{ secrets.paper_user }}@${{ secrets.paper_host }}:${{ secrets.paper_port }}"
+
+      - name: Pull latest on paper
+        run: docker --context paper pull ghcr.io/ksi-isa/ksi.isa.ru:latest
+
+      - name: Remove previous in paper
+        run: docker --context paper rm ksi.isa.ru
+
+      - name: Run latest in paper
+        run: docker --context paper run --name ksi.isa.ru -p 18080:3000 ghcr.io/ksi-isa/ksi.isa.ru:latest

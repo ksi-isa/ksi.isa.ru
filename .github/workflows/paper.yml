@@ -12,7 +12,7 @@ jobs:
         run: |
           mkdir -p ~/.ssh/
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.paper_host }} > ~/.ssh/known_hosts
+          ssh-keyscan -H ${{ secrets.paper_host }} -p ${{ secrets.paper_port }} > ~/.ssh/known_hosts
 
       - name: Create context
         run: docker context create paper --docker "host=ssh://${{ secrets.paper_user }}@${{ secrets.paper_host }}:${{ secrets.paper_port }}"

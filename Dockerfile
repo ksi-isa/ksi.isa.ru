@@ -2,7 +2,7 @@
 
 ARG NODE_VERSION=22.0.0
 
-FROM node:${NODE_VERSION}-slim as base
+FROM node:${NODE_VERSION}-bullseye-slim as base
 
 EXPOSE 3000
 ENV NODE_ENV=production

@@ -11,8 +11,10 @@ jobs:
       - name: Create ssh key
         run: |
           mkdir -p ~/.ssh/
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 700 ~/.ssh
+          echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
           ssh-keyscan -H -p ${{ secrets.paper_port }} ${{ secrets.paper_host }} > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
 
       - name: Create context
         run: docker context create paper --docker "host=ssh://${{ secrets.paper_user }}@${{ secrets.paper_host }}:${{ secrets.paper_port }}"

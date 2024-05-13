@@ -13,6 +13,9 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Test ssh connection
+        run: ssh -T ssh://${{ secrets.paper_user }}@${{ secrets.paper_host }}:${{ secrets.paper_port }}
+
       - name: Create context
         run: docker context create paper --docker "host=ssh://${{ secrets.paper_user }}@${{ secrets.paper_host }}:${{ secrets.paper_port }}"
 

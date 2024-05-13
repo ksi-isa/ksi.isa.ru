@@ -28,11 +28,11 @@ export default defineNuxtConfig({
         },
         {
           property: "og:url",
-          content: "ksi.isa.ru",
+          content: "https://ksi.papertext.ru/",
         },
         {
           property: "og:image",
-          content: "/logo.png",
+          content: "https://ksi.papertext.ru/logo.png",
         },
       ],
 

@@ -20,7 +20,7 @@
     "@nuxt/content": "^2.12.1",
     "@nuxt/image": "^1.4.0",
     "nuxt": "^3.11.1",
-    "vue": "^3.4.21",
+    "vue": "^3.4.29",
     "vue-router": "^4.3.0",
     "typescript": "^5.4.3",
     "vue-tsc": "^1",

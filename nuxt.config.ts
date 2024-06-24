@@ -18,21 +18,29 @@ export default defineNuxtConfig({
           name: "description",
           content: process.env.npm_package_description || "",
         },
+        // {
+        //   property: "og:title",
+        //   content: "Сайт Кафедры Системных Исследований",
+        // },
+        // {
+        //   property: "og:type",
+        //   content: "website",
+        // },
+        // {
+        //   property: "og:url",
+        //   content: "https://ksi.papertext.ru/",
+        // },
+        // {
+        //   property: "og:image",
+        //   content: "https://ksi.papertext.ru/logo.png",
+        // },
         {
-          property: "og:title",
-          content: "Сайт Кафедры Системных Исследований",
+          name: "yandex-verification",
+          content: "7598be5433b72ed6",
         },
         {
-          property: "og:type",
-          content: "website",
-        },
-        {
-          property: "og:url",
-          content: "https://ksi.papertext.ru/",
-        },
-        {
-          property: "og:image",
-          content: "https://ksi.papertext.ru/logo.png",
+          name: "google-site-verification",
+          content: "MWKREPQ4UtbBUjWBE4xyi8DAHP7hgYBC_CbObRGfsaI",
         },
       ],
 

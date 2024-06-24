@@ -63,6 +63,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/sitemap",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/robots",
     "nuxt-icon",
   ],
   site: {

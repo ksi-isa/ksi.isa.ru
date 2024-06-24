@@ -14,6 +14,9 @@ dependencies:
   '@nuxt/image':
     specifier: ^1.4.0
     version: 1.7.0
+  '@nuxtjs/robots':
+    specifier: ^3.0.0
+    version: 3.0.0
   '@nuxtjs/sitemap':
     specifier: ^5.1.2
     version: 5.1.5(@nuxt/devtools@1.2.0)(@vue/compiler-core@3.4.27)(h3@1.11.1)(nuxt@3.11.2)(postcss@8.4.38)(vite@5.2.11)(vue@3.4.27)(webpack@5.91.0)
@@ -1454,6 +1457,17 @@ packages:
     transitivePeerDependencies:
       - rollup
       - supports-color
+    dev: false
+
+  /@nuxtjs/robots@3.0.0:
+    resolution: {integrity: sha512-qsHGW1KXBvV5Kq7u3huPnFCUTbHS4Fk8Za2mNPgmUXcwLgp3exvhPtdZfIdjrCF/aZk3A8OZONNmGghs6CecBA==}
+    dependencies:
+      '@nuxt/kit': 3.11.2
+      h3: 1.11.1
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+      - uWebSockets.js
     dev: false
 
   /@nuxtjs/sitemap@5.1.5(@nuxt/devtools@1.2.0)(@vue/compiler-core@3.4.27)(h3@1.11.1)(nuxt@3.11.2)(postcss@8.4.38)(vite@5.2.11)(vue@3.4.27)(webpack@5.91.0):

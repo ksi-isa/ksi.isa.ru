@@ -10,13 +10,11 @@ export default defineNuxtConfig({
       meta: [
         { charset: "utf-8" },
         {
-          name: "description",
-          content: "Сайт Кафедры Системных Исследований",
-        },
-        {
           hid: "description",
           name: "description",
-          content: process.env.npm_package_description || "",
+          content:
+            process.env.npm_package_description ||
+            "Сайт Кафедры Системных Исследований",
         },
         // {
         //   property: "og:title",
@@ -32,7 +30,7 @@ export default defineNuxtConfig({
         // },
         // {
         //   property: "og:image",
-        //   content: "https://ksi.papertext.ru/logo.png",
+        //   content: "https://ksi.papertext.ru/icon.png",
         // },
         {
           name: "yandex-verification",
@@ -43,8 +41,6 @@ export default defineNuxtConfig({
           content: "MWKREPQ4UtbBUjWBE4xyi8DAHP7hgYBC_CbObRGfsaI",
         },
       ],
-
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
   vue: {
@@ -65,6 +61,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/robots",
     "nuxt-icon",
+    "nuxt-seo-experiments",
   ],
   site: {
     url: "https://ksi.isa.ru",

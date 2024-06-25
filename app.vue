@@ -37,7 +37,7 @@
                 <NuxtPicture
                   format="webp"
                   quality="100"
-                  src="/logo.png"
+                  src="/icon.png"
                   :img-attrs="{
                     class: 'h-16',
                     alt: 'Кафедра Системных Исследований',

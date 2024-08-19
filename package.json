@@ -26,7 +26,7 @@
     "nuxt-icon": "^0.6.10",
     "nuxt-seo-experiments": "4.0.0-rc.9",
     "typescript": "^5.4.3",
-    "vue": "^3.4.21",
+    "vue": "^3.4.38",
     "vue-router": "^4.3.0",
     "vue-tsc": "^1"
   },

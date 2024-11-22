@@ -24,7 +24,7 @@
     "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.14.1592",
     "nuxt-icon": "^0.6.10",
-    "nuxt-seo-experiments": "4.0.0-rc.9",
+    "nuxt-seo-experiments": "4.0.1",
     "typescript": "^5.7.2",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5",

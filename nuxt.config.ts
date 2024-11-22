@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   telemetry: false,
+
   app: {
     head: {
       charset: "utf-8",
@@ -44,10 +45,13 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   vue: {
     propsDestructure: true,
   },
+
   devtools: { enabled: true },
+
   typescript:
     process.env.NODE_ENV == "development"
       ? {
@@ -55,6 +59,7 @@ export default defineNuxtConfig({
           strict: true,
         }
       : {},
+
   modules: [
     "@nuxt/content",
     "@nuxt/image",
@@ -64,7 +69,10 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-seo-experiments",
   ],
+
   site: {
     url: "https://ksi.isa.ru",
   },
+
+  compatibilityDate: "2024-11-22",
 })

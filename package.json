@@ -9,10 +9,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lint": "pnpm --reporter=append-only run \"/^lint:.*/\"",
+    "lint": "echo 'fixme:npm run \"/^lint:.*/\"'",
     "lint:typecheck": "nuxt typecheck",
     "lint:prettier": "prettier -c .",
-    "fix": "pnpm --reporter=append-only run \"/^fix:.*/\"",
+    "fix": "echo 'fixme: npm run \"/^fix:.*/\"'",
     "fix:prettier": "prettier -w ."
   },
   "dependencies": {

@@ -12,17 +12,12 @@ WORKDIR /ksi.isa.ru
 # Build
 FROM base as build
 
-ENV PNPM_HOME="/pnpm"
-ENV PATH="$PNPM_HOME:$PATH"
-RUN corepack enable
-
-COPY --link package.json pnpm-lock.yaml .
-RUN pnpm install --prod=false
+COPY --link package.json package-lock .
+RUN npm install
 
 COPY --link . .
 
-RUN pnpm run build
-# RUN pnpm prune
+RUN npm run build
 
 # Run
 FROM base

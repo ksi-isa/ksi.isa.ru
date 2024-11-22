@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@headlessui/vue':
-        specifier: ^1.7.19
-        version: 1.7.22(vue@3.5.13(typescript@5.7.2))
+        specifier: ^1.7.23
+        version: 1.7.23(vue@3.5.13(typescript@5.7.2))
       '@nuxt/content':
         specifier: ^2.13.4
         version: 2.13.4(ioredis@5.4.1)(magicast@0.3.5)(nuxt@3.14.1592(@parcel/watcher@2.4.1)(@types/node@20.12.11)(encoding@0.1.13)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.27.3)(terser@5.31.0)(typescript@5.7.2)(vite@5.4.11(@types/node@20.12.11)(terser@5.31.0))(vue-tsc@1.8.27(typescript@5.7.2)))(rollup@4.27.3)(vue@3.5.13(typescript@5.7.2))
@@ -613,8 +613,8 @@ packages:
   '@floating-ui/utils@0.2.2':
     resolution: {integrity: sha512-J4yDIIthosAsRZ5CPYP/jQvUAQtlZTTD/4suA08/FEnlxqW3sKS9iAhgsa9VYLZ6vDHn/ixJgIqRQPotoBjxIw==}
 
-  '@headlessui/vue@1.7.22':
-    resolution: {integrity: sha512-Hoffjoolq1rY+LOfJ+B/OvkhuBXXBFgd8oBlN+l1TApma2dB0En0ucFZrwQtb33SmcCqd32EQd0y07oziXWNYg==}
+  '@headlessui/vue@1.7.23':
+    resolution: {integrity: sha512-JzdCNqurrtuu0YW6QaDtR2PIYCKPUWq28csDyMvN4zmGccmE7lz40Is6hc3LA4HFeCI7sekZ/PQMTNmn9I/4Wg==}
     engines: {node: '>=10'}
     peerDependencies:
       vue: ^3.2.0
@@ -5344,7 +5344,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.2': {}
 
-  '@headlessui/vue@1.7.22(vue@3.5.13(typescript@5.7.2))':
+  '@headlessui/vue@1.7.23(vue@3.5.13(typescript@5.7.2))':
     dependencies:
       '@tanstack/vue-virtual': 3.5.0(vue@3.5.13(typescript@5.7.2))
       vue: 3.5.13(typescript@5.7.2)

@@ -16,7 +16,7 @@
     "fix:prettier": "prettier -w ."
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.19",
+    "@headlessui/vue": "^1.7.23",
     "@nuxt/content": "^2.13.4",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/robots": "^3.0.0",

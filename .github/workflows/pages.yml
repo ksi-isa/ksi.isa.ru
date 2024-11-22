@@ -41,7 +41,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Static HTML export with Nuxt
-        run: npm exec nuxt build --preset github_pages
+        run: npm exec nuxt build -- --preset github_pages
         env:
           NUXT_APP_BASE_URL: "/${{ github.event.repository.name }}/"
       - name: Upload artifact

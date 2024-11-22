@@ -12,7 +12,7 @@ WORKDIR /ksi.isa.ru
 # Build
 FROM base as build
 
-COPY --link package.json package-lock .
+COPY --link package.json package-lock.json .
 RUN npm install
 
 COPY --link . .

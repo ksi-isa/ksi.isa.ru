@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  telemetry: false,
   app: {
     head: {
       charset: "utf-8",

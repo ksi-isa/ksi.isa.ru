@@ -21,7 +21,7 @@
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/sitemap": "^6.1.5",
-    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.14.1592",
     "nuxt-icon": "^0.6.10",
     "nuxt-seo-experiments": "4.0.0-rc.9",

@@ -2,7 +2,7 @@
 
 ARG NODE_VERSION=22.0.0
 
-FROM node:${NODE_VERSION}-bullseye-slim as base
+FROM node:${NODE_VERSION}-bullseye-slim AS base
 
 EXPOSE 3000
 ENV NODE_ENV=production
@@ -10,7 +10,7 @@ ENV NODE_ENV=production
 WORKDIR /ksi.isa.ru
 
 # Build
-FROM base as build
+FROM base AS build
 
 COPY --link package.json package-lock.json .
 RUN npm install

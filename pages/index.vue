@@ -20,39 +20,18 @@
           class="underline text-blue-600 hover:text-blue-700 visited:text-violet-600"
           to="http://www.isa.ru/"
         >
-          Институт системного анализа, Федеральный Исследовательский Центр
-          «Информатика и управление» Российской Академии Наук</NuxtLink
+          Федеральный Исследовательский Центр «Информатика и управление»
+          Российской Академии Наук</NuxtLink
         >.
       </p>
       <p>
-        Презентация Кафедры Системных Исследований:
+        Презентация Кафедры системных исследований:
         <NuxtLink
           target="_blank"
           class="underline text-blue-600 hover:text-blue-700 visited:text-violet-600"
           to="/Презентация КСИ 2025.pdf"
         >
           <Icon name="heroicons:arrow-down-on-square" /></NuxtLink
-        >.
-      </p>
-
-      <h2 class="pt-5 lg:pt-10 text-3xl">Новости</h2>
-      <ul class="pl-5 list-disc">
-        <li>
-          Открыт прием на бакалаврские и магистерские программы кафедры
-          системных исследований на 2025 год.
-        </li>
-        <li>
-          Открыт прием на бакалаврские и магистерские программы кафедры
-          системных исследований на 2024 год.
-        </li>
-      </ul>
-
-      <p class="pt-5 lg:pt-10">
-        Для поступления на кафедру необходимо прислать резюме на адрес
-        <NuxtLink
-          class="underline text-blue-600 hover:text-blue-700 visited:text-violet-600"
-          to="mailto:ivs@isa.ru"
-          >ivs@isa.ru</NuxtLink
         >.
       </p>
       <p>
@@ -63,6 +42,32 @@
           >Абитуриентам</NuxtLink
         >.
       </p>
+
+      <div class="flex flex-col lg:flex-row pt-5 lg:pt-10">
+        <div class="flex-1 p-4">
+          <h2 class="text-3xl">Объявления</h2>
+          <ul class="pl-5 list-disc">
+            <li>
+              Открыт прием на бакалаврские и магистерские программы Кафедры
+              системных исследований на 2025 год.
+            </li>
+          </ul>
+        </div>
+        <div class="flex-1 p-4 w-auto lg:w-1/2">
+          <h2 class="text-3xl">Видео-экскурсия</h2>
+          <video controls>
+            <source
+              src="/Презентация кафедры системных исследований 2025.mp4"
+              type="video/mp4"
+            />
+            Ваш браузер не поддерживает используемые видео-проигрыватель, вы
+            можете просмотреть видео по ссылке
+            <a href="/Презентация кафедры системных исследований 2025.mp4"
+              >видео</a
+            >.
+          </video>
+        </div>
+      </div>
     </div>
   </div>
 </template>

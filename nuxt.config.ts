@@ -12,7 +12,6 @@ export default defineNuxtConfig({
       meta: [
         { charset: "utf-8" },
         {
-          hid: "description",
           name: "description",
           content:
             process.env.npm_package_description ||
@@ -46,11 +45,7 @@ export default defineNuxtConfig({
     },
   },
 
-  vue: {
-    propsDestructure: true,
-  },
-
-  devtools: { enabled: true },
+  // devtools: { enabled: true },
 
   typescript:
     process.env.NODE_ENV == "development"
@@ -61,18 +56,17 @@ export default defineNuxtConfig({
       : {},
 
   modules: [
-    "@nuxt/content",
-    "@nuxt/image",
     "@nuxtjs/sitemap",
-    "@nuxtjs/tailwindcss",
     "@nuxtjs/robots",
-    "nuxt-icon",
-    "nuxt-seo-experiments",
+    "@nuxt/image",
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/seo",
+    "@nuxt/icon",
   ],
 
   site: {
     url: "https://ksi.isa.ru",
   },
 
-  compatibilityDate: "2024-11-22",
+  compatibilityDate: "2025-04-04",
 })

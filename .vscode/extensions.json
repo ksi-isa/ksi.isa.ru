@@ -4,6 +4,5 @@
     "vue.volar",
     "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
-    "nuxt.mdc"
   ]
 }

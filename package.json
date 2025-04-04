@@ -17,21 +17,22 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",
-    "@nuxt/content": "^2.13.4",
-    "@nuxt/image": "^1.8.1",
-    "@nuxtjs/robots": "^4.1.11",
-    "@nuxtjs/sitemap": "^6.1.5",
-    "@nuxtjs/tailwindcss": "^6.12.2",
-    "nuxt": "^3.14.1592",
-    "nuxt-icon": "^0.6.10",
-    "nuxt-seo-experiments": "4.0.1",
-    "typescript": "^5.7.2",
+    "@nuxt/icon": "1.11.0",
+    "@nuxt/image": "^1.10.0",
+    "@nuxtjs/robots": "^5.2.8",
+    "@nuxtjs/seo": "3.0.2",
+    "@nuxtjs/sitemap": "^7.2.9",
+    "@nuxtjs/tailwindcss": "^6.13.2",
+    "nuxt": "^3.16.2",
+    "typescript": "^5.8.2",
     "vue": "^3.5.13",
-    "vue-router": "^4.4.5",
-    "vue-tsc": "^1"
+    "vue-router": "^4.5.0",
+    "vue-tsc": "^2.2.8",
+    "@iconify-json/heroicons": "^1.2.2"
+
   },
   "devDependencies": {
-    "prettier": "^3.3.3"
+    "prettier": "^3.5.3"
   },
-  "packageManager": "pnpm@9.14.2+sha512.6e2baf77d06b9362294152c851c4f278ede37ab1eba3a55fda317a4a17b209f4dbb973fb250a77abc463a341fcb1f17f17cfa24091c4eb319cda0d9b84278387"
+  "packageManager": "pnpm@10.7.1+sha512.2d92c86b7928dc8284f53494fb4201f983da65f0fb4f0d40baafa5cf628fa31dae3e5968f12466f17df7e97310e30f343a648baea1b9b350685dafafffdf5808"
 }

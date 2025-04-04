@@ -29,7 +29,7 @@
         <NuxtLink
           target="_blank"
           class="underline text-blue-600 hover:text-blue-700 visited:text-violet-600"
-          to="/Презентация КСИ 2024.pdf"
+          to="/Презентация КСИ 2025.pdf"
         >
           <Icon name="heroicons:arrow-down-on-square" /></NuxtLink
         >.

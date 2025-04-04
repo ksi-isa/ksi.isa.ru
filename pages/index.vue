@@ -29,7 +29,7 @@
         <NuxtLink
           target="_blank"
           class="underline text-blue-600 hover:text-blue-700 visited:text-violet-600"
-          to="/Презентация КСИ 2024.pdf"
+          to="/Презентация КСИ 2025.pdf"
         >
           <Icon name="heroicons:arrow-down-on-square" /></NuxtLink
         >.
@@ -37,6 +37,10 @@
 
       <h2 class="pt-5 lg:pt-10 text-3xl">Новости</h2>
       <ul class="pl-5 list-disc">
+        <li>
+          Открыт прием на бакалаврские и магистерские программы кафедры
+          системных исследований на 2025 год.
+        </li>
         <li>
           Открыт прием на бакалаврские и магистерские программы кафедры
           системных исследований на 2024 год.

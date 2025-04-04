@@ -92,7 +92,7 @@
     <footer
       class="bg-gray-800 text-gray-200 p-4 text-center flex items-center justify-center"
     >
-      <div>&copy; Кафедра Системных Исследований, 2024.</div>
+      <div>&copy; Кафедра Системных Исследований, 2025.</div>
     </footer>
   </div>
 </template>
